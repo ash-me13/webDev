@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+
     <style>
         /* p{
             color:green!important
@@ -20,12 +21,17 @@
             color: rgb(176, 176, 250);
             border: 15px solid black;
             padding: 20px;
-            margin: 310px;
+            /* margin: 310px; */
             box-sizing: border-box;
+            background-color: lightsalmon;
         }
 
         .note {
             color: antiquewhite;
+        }
+
+        div p{
+            color:brown;
         }
     </style>
     
@@ -83,5 +89,14 @@
     <p class="box">This is my paragraph!</p>
     <p style="color:aquamarine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eaque voluptas dolore corporis!</p>
     <p id="intro">Playing with CSS specificity</p>
+    <div>
+        <p>Child 1</p>
+        <div>
+            <p>Child 2</p>
+            <strong>Child Abuse</strong>
+        </div>
+        <p>Hell nah</p>
+    </div>
+    <p>Just another para</p>
 </body>
 </html>

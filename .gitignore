@@ -2,6 +2,9 @@
 *.log
 
 # Ignore temporary files
+*.tmp
+
+# Ignore text files
 *.txt
 
 # Ignore the build directory
