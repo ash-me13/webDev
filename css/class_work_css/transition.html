@@ -6,19 +6,27 @@
     <title>Document</title>
     <style>
         div{
-            width: 600px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-color: pink;
             transition: width 2s, height 2s;
+            transition-delay: 0.5s;
         }
+        #div1{transition-timing-function: liner; background-color: red;}
+        #div2{transition-timing-function: ease-in;}
+        #div3{transition-timing-function: ease-out;background-color: red;}
+        #div4{transition-timing-function: ease-in-out;}
+        #div5{transition-timing-function: cubic-bezier(0,0,0,0); background-color: red;}
         div:hover{
-            width: 400px;
-            height: 400px;
-            background-color: red;
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <div></div>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
 </body>
 </html>
