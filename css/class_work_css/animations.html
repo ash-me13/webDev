@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  display:inline-block;
+  position:relative;
+}
+
+#box1{
+    margin-top: 0px;
+    animation-name:box1;
+    animation-duration:10s;
+}
+
+#box2{
+    margin-left: 300px;
+    top: 300px;
+    animation-name:box2;
+    animation-duration:10s;
+}
+
+@keyframes box1 {
+  0%   {background-color:red; top:0px;}
+  10%  {background-color:yellow; top:300px;}
+  20%  {background-color:blue; top:0px;}
+  30%  {background-color:green; top:300px;}
+  40% {background-color:red; top:0px;}
+  50%   {background-color:red; top:300px;}
+  60%  {background-color:yellow; top:0px;}
+  70%  {background-color:blue; top:300px;}
+  80%  {background-color:green; top:0px;}
+  90% {background-color:red; top:300px;}
+  100%  {background-color:yellow; top:0px;}
+}
+
+@keyframes box2 {
+  0%   {background-color:red; top:300px;}
+  10%  {background-color:yellow; top:0px;}
+  20%  {background-color:blue; top:300px;}
+  30%  {background-color:green; top:0px;}
+  40% {background-color:red; top:300px;}
+  50%   {background-color:red; top:0px;}
+  60%  {background-color:yellow; top:300px;}
+  70%  {background-color:blue; top:0px;}
+  80%  {background-color:green; top:300px;}
+  90% {background-color:red; top:0px;}
+  100%  {background-color:yellow; top:300px;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="box1"></div>
+<div id="box2"></div>
+
+</body>
+</html>
+
